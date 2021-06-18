@@ -1,0 +1,52 @@
+body{
+    background-image: url(./imagens/fundo.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.option img{
+    width: 120px;
+    vertical-align: middle;
+}
+
+h1{
+    text-align: center;
+    color: gainsboro;
+}
+
+.select{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.option{
+    background-color: rgba(220, 220, 220, 0.349);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    text-align: center;
+    border: solid white;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+}
+
+.option:hover{
+    transform: scale(1.025);
+    opacity: 1.0;
+}
