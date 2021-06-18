@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.barra{
+    background-color: rgb(61, 61, 61);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+
+    font-size: 25px;
+    color: white;
+}
+
+.icon{
+    margin: 3px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon:hover{
+    background-color: rgb(128, 128, 128);
+}
+
+#fecha{
+    margin-right: 5px;
+}
+
+#fecha:hover{
+    background-color: rgb(238, 25, 25);
+}
+
+a{
+    color: white;
+    cursor: default;
+}
