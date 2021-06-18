@@ -1,0 +1,70 @@
+body{
+    background-image: url(../imagens/fundo.jpg);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+}
+
+.infos{
+    margin-bottom: 30px;
+}
+img{
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(220, 220, 220, 0.336);
+    border-radius: 50%;
+}
+
+button{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(143, 143, 143, 0.418);
+    border: 1px solid gainsboro;
+    border-left: none;
+    border-radius: 0;
+    font-size: large;
+    font-weight: 900;
+    transition: ease-in 0.3s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:  rgba(220, 220, 220, 0.897);
+}
+
+iframe{
+    width: 100%;
+}
+
+.password{
+    display: flex;
+}
+
+.password input{
+    height: 30px;
+    border: 1px solid gainsboro;
+    border-right: none;
+    background-color: rgba(220, 220, 220, 0.055);
+    padding-left: 3px;
+}
