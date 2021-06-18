@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../imagens/fundo_desktop.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.barra{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    bottom: 0;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.barra img{
+    width: 40px;
+    margin-left: 15px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    vertical-align: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.barra img:hover{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 85px;
+}
+
+section div{
+    margin-bottom: 12px;
+    cursor: pointer;
+    padding: 2px;
+}
+
+section div:hover{
+    background-color: rgba(103, 103, 255, 0.37);
+    border: solid 1px rgba(85, 85, 253, 0.514);
+}
+
+section img{
+    width: 85px;
+}
+
+#chrome{
+    width: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+}
+
+section p{
+    color: gainsboro;
+    text-align: center;
+    text-shadow: black 2px 2px 2px;
+}
+
+.popup_options{
+    background-color: rgba(128, 128, 128, 0.507);
+    width: 320px;
+    height: 120px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    border-radius: 20px;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    transition: ease-out 0.5s;
+}
+
+a{
+    cursor: pointer;
+}
+
+.popup_wallpaper{
+    background-color: rgba(128, 128, 128, 0.507);
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    border-radius: 20px;
+    font-size: 30px;
+    transition: ease-out 0.5s;
+    text-align: center;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    display: none;
+}
+
+.popup_wallpaper h2{
+    margin-bottom: 30px;
+}
+
+.galeria img{
+    width: 250px;
+    cursor: pointer;
+    filter: grayscale(60%);
+    -webkit-filter: grayscale(60%);
+}
+
+.galeria img:hover{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%)
+}
+
+.popup_wallpaper p{
+    margin-top: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.direita{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#ajuda{
+    cursor: help;
+}
+
+.help{
+    margin-left: auto;
+    vertical-align: center;
+    font-size: 25px;
+    margin-right: 10px;
+    cursor: help;
+    color: gray;
+}

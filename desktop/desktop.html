@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop</title>
+    <link rel="stylesheet" href="desktop.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
+</head>
+<body>
+    <section class="esquerda">
+        <div onclick="window.location='../pistas/pistas.html'">
+            <img src="../imagens/pastapng.png">
+            <p>Pistas</p>
+        </div>
+        <div onclick="window.location='../anotacoes/carregando.html'">
+            <img src="../imagens/pastapng.png">
+            <p>Anotações</p>
+        </div>
+        <div>
+            <img src="../imagens/chrome.png" id="chrome" onclick="window.location='../google/google.html'">
+            <p>Googli</p>
+        </div>
+        <div onclick="astral()">
+            <img src="../imagens/Astral.png" id="chrome">
+            <p>Abrir- Astral</p>
+        </div>
+    </section>
+    <section class="direita">
+        <div onclick="livro()">
+            <img src="../imagens/pastapng.png">
+            <p>Regras e Sistema</p>
+        </div>
+    </section>
+    
+    <div class="barra">
+        <img src="../imagens/logo_windows.png" onclick="option()">
+        <div class="help" onclick="alert('A ajuda ainda não está disponível')">
+            <i class="fas fa-question-circle"></i>
+        </div>
+    </div>
+
+    <div class="popup_options">
+        <a onclick="desliga()"><i class="fas fa-power-off"></i></a>
+        <a onclick="logout()"><i class="fas fa-sign-out-alt"></i></a>
+        <a onclick="cancela()"><i class="far fa-times-circle"></i></a>
+    </div>
+
+    <div class="popup_wallpaper">
+        <h2>Selecione o plano de fundo</h2>
+        <div class="galeria">
+            <img src="../imagens/fundo_desktop.jpeg" onclick="mudar(um)">
+            <img src="../imagens/desktop1.jpeg" onclick="mudar(dois)">
+            <img src="../imagens/desktop2.png" onclick="mudar(tres)">
+        </div>
+        <p onclick="fechar()">Fechar</p>
+    </div>
+    <script src="desktop.js"></script>
+</body>
+</html>
