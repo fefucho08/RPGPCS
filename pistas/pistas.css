@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* BARRA SUPERIOR */
+
+.barra{
+    background-color: rgb(61, 61, 61);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+
+    font-size: 25px;
+    color: white;
+}
+
+.icon{
+    margin: 3px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon:hover{
+    background-color: rgb(128, 128, 128);
+}
+
+#fecha{
+    margin-right: 5px;
+}
+
+#fecha:hover{
+    background-color: rgb(238, 25, 25);
+}
+
+a{
+    color: white;
+    cursor: default;
+}
+
+/*---------------------------------------------------------------------*/
+
+.gallery-section{
+    width: 100%;
+    padding: 60px 0;
+    background: #CACACA;
+}
+
+.inner-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.gallery-section h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+.border{
+    width: 180px;
+    height: 4px;
+    background: black;
+    margin: 60px auto;
+}
+
+.gallery-section .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-section .image{
+    flex: 25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-section .image img{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+}
+
+.gallery-section .image:hover img{
+    transform: scale(1.07)
+}
+
+@media screen and (max-width: 960px){
+    .gallery-section .image{
+        flex: 33.33%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .gallery-section .image{
+        flex: 50%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .gallery-section .image{
+        flex: 100%;
+    }
+}
+
+h1,p{
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section div{
+    color: red;
+    margin-top: 80px;
+    font-size: 70px;
+}
