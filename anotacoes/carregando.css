@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: progress;
+}
+
+.container{
+    background-color: rgb(165, 165, 165);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loader{
+    width: 50px;
+    height: 50px;
+    border: 5px solid;
+    color: rgb(24, 91, 94);
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: loader 1.2s linear infinite;
+}
+
+.popup{
+    width: 300px;
+    height: 120px;
+    background-color: rgb(194, 194, 194);
+    border-radius: 10px;
+    margin-top: 50px;
+    animation: appear 5s linear;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 7px;
+    box-shadow: 2px 0px 10px;
+}
+
+.popup input{
+    width: 150px;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 3px;
+    text-align: center;
+    cursor: text;
+}
+
+button{
+    cursor: pointer;
+}
+
+@keyframes loader{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes appear{
+    0%{
+        margin-top: -50px;
+        transform: scale(0.001);
+    }
+    25%{
+        margin-top: -50px;
+        transform: scale(0.001);
+    }
+    50%{
+        margin-top: -50px;
+        transform: scale(0.001);
+    }
+    75%{
+        margin-top: -50px;
+        transform: scale(0.001);
+    }
+    100%{
+        margin-top: 50px;
+        transform: scale(1);
+    }
+}
