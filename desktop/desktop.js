@@ -19,8 +19,7 @@ function desliga(){
 }
 
 function logout(){
-    alert("Isso é meramente decorativo, não serve pra nada KKKKK")
-    // localStorage.removeItem("personagem");
+    localStorage.removeItem("personagem");
     window.location="../index.html";
 }
 
@@ -45,6 +44,10 @@ function astral(){
 function livro(){
     alert("Livro somente disponível em inglês :(");
     window.location="../Livro_CoC.pdf";
+}
+
+function ajuda (){
+    window.location="https://drive.google.com/file/d/1jwmP3CTzHMAqmTcq4rnTAwF5yeac1Pdo/view"
 }
 
 document.onmousedown = click 
