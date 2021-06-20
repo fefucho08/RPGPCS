@@ -47,7 +47,7 @@ function livro(){
 }
 
 function ajuda (){
-    window.location="https://drive.google.com/file/d/1jwmP3CTzHMAqmTcq4rnTAwF5yeac1Pdo/view"
+    window.location="https://drive.google.com/file/d/1t8szxt1F1MHcBK_oejIZWNtMlTmy2tPm/view?usp=sharing"
 }
 
 document.onmousedown = click 
