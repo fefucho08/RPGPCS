@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    box-sizing: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: rgb(228, 228, 228);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.barra{
+    background-color: rgb(61, 61, 61);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+
+    font-size: 25px;
+    color: white;
+}
+
+.icon{
+    margin: 3px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon:hover{
+    background-color: rgb(128, 128, 128);
+}
+
+#fecha{
+    margin-right: 5px;
+}
+
+#fecha:hover{
+    background-color: rgb(238, 25, 25);
+}
+
+a{
+    color: white;
+    cursor: default;
+}
+
+.conversa{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.sent{
+    margin-top: 20px;
+    display: flex;
+    justify-content: right;
+}
+
+.rec{
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+}
+
+.sent div{
+    background-color: rgb(104, 250, 104);
+    border-radius: 20px;
+    padding: 10px;
+    max-width: 400px;
+}
+
+.rec div{
+    background-color: rgb(161, 161, 161);
+    border-radius: 20px;
+    padding: 10px;
+    max-width: 400px;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.warning{
+    display: flex;
+    justify-content: center;
+}
+
+.warning div{
+    background-color: rgb(255, 110, 110);
+    text-align: center;
+    width: 400px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 30px;
+}
+
+.tudo{
+    display: flex;
+    justify-content: center;
+}
