@@ -67,4 +67,5 @@ iframe{
     border-right: none;
     background-color: rgba(220, 220, 220, 0.055);
     padding-left: 3px;
+    outline: 0;
 }
