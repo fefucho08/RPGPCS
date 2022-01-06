@@ -111,6 +111,7 @@ section{
     width: 90%;
     padding-left: 20px;
     font-size: medium;
+    outline: 0;
 }
 
 .pesquisa button{
