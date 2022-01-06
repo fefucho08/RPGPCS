@@ -51,6 +51,7 @@
     padding: 3px;
     text-align: center;
     cursor: text;
+    outline: 0;
 }
 
 button{
