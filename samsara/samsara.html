@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="Samsara.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Samsara</title>
+</head>
+<body class="body">
+    
+    <header>
+        <div class="caixa">
+            <h1><img src="logo_branco.png"></h1>
+            <nav class="menu">
+                <ul class="lista-menu">
+                    <li class="itens"><a href="#">Início</a></li>
+                    <li class="itens"><a href="#quemsomos">Quem Somos</a></li>
+                    <li class="itens"><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-noticias">
+            <h2 class="titulo-principal">Últimas Notícias</h2>
+            <div class="manchetes">
+                <ul>
+                    <li class="noticia" onclick="abre()">
+                        <img src="equipe_lab.jpg">
+                        <div class="noticia-conteudo">
+                            <h3 class="titulo-noticia">Obrigado!</h3>
+                            <p class="lead">Após anos em funcionamento, a nossa equipe declara o fim de nossas atividades</p>
+                            <p class="data">6 de outubro, 2012</p>
+                        </div>
+                    </li>
+                    <li class="noticia" onclick="abre2()">
+                        <div class="img-2"></div>
+                        <div class="noticia-conteudo">
+                            <h3 class="titulo-noticia">Breve Anúncio</h3>
+                            <p class="lead">Companhia Samsara se envolve em novo projeto</p>
+                            <p class="data">22 de julho, 2012</p>
+                        </div>
+                </ul>
+            </div>
+        </section>
+        <section id="quemsomos" class="section-quem">
+            <h2 class="titulo-principal">Quem Somos</h2>
+            <div class="banner"></div>
+            <p>Somos uma das maiores companhias de laboratórios científicos do mundo. Originária da Coreia, a nossa companhia realiza diversos dos mais importantes projetos relacionados à ciência no mundo. Desde 1930 estamos envolvidos em projetos e iniciativas que mudaram o mundo - desde vacinas até o desenvolvimento de novas tecnologias para facilitar a vida dos cientistas.</p>
+            <p>Temos o orgulho de dizer que temos os profissionais mais capacitados do mundo para a realização de todos os nossos projetos. Desde a ramificação científica até a limpeza dos laboratórios, nossos funcionários tem uma alta formação e estão prontos para todo o tipo de situações e imprevistos que possam ocorrer. Nossos laboratórios são altamente equipados com os maiores e melhores equipamentos necessários para a realização de toda e qualquer experiência.</p>
+            <p>Nos dias atuais, estamos envolvidos em um novo projeto. Não podemos divulgar muito sobre o que se trata o projeto, uma vez que ainda não temos nenhum resultado concreto. Entretanto, podemos dizer que se trata de algo extremamente revolucionário para o mundo, que poderá mudar todas as áreas da ciência (química, física e biologia).</p>
+        </section>
+        <section id="contato" class="section-contato">
+            <h2 class="titulo-principal">Fale Conosco</h2>
+
+            <div class="form-contato">
+                <form>
+                    <div class="input-flex">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" class="input-padrao" required>
+        
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="input-padrao" placeholder="email@dominio.com" required>
+                    </div>
+                    
+                    <div class="input-flex">
+                        <label for="telefone" style="display:block">Telefone</label>
+                        <input type="tel" id="telefone" class="input-padrao" placeholder="+XX (XX) XXXXX-XXXX">
+                    </div>
+                    
+                    <div class="input-flex">
+                        <fieldset>
+                            <legend>Qual seria o motivo do contato?</legend>
+                            <label for="curriculo"><input id="curriculo" type="radio" value="Curriculo" name="motivo">Currículo</label>
+                            <label for="duvida"><input id="duvida" type="radio" value="Duvida" name="motivo" checked>Dúvida</label>
+                        </fieldset>
+                    </div>
+                    
+                    <div class="input-flex">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea placeholder="Digite aqui..." class="input-mensagem" id="mensagem"></textarea>
+                    </div>
+                    
+                    <input type="submit" value="Enviar" class="enviar" onclick="enviar()"> 
+                </form>
+            </div>
+        </section>
+
+        <section class="pop-up">
+            <div class="cabecalho">
+                <a onclick="fecha()" id="fecha">&#9938;</a>
+            </div>
+			<section class="conteudo-noticia">
+				<h2 class="titulo-popup">Obrigado!</h2>
+                <p class="data" style="text-indent: 0; text-align: center;">6 de outubro, 2012</p>
+				<img src="equipe_lab.jpg">
+				<p>Após um grave acontecimento envolvendo uma de nossas equipes, a nossa companhia declara o encerramento das nossas atividades. A situação atual é de alto risco para todos os indivíduos envolvidos no acidente - por tais motivos, a companhia achou pertinente o fechamento de suas portas.</p>
+				<p>Tal acontecimento ocorreu durante a execução do nosso atual projeto, anunciado há 1 atrás. Por conta de motivos burocráticos e de respeito às famílias de todos os envolvidos, não daremos detalhes sobre o acontecimento, nem sobre qual era o objetivo do projeto pelo qual estavam trabalhando (se pondo em risco). Além disso, pelos mesmos motivos expostos, não daremos continuidade ao projeto e fecharemos todas as unidades envolvidas em tal.</p>
+				<p>Devemos, ainda, ressaltar que entre as pessoas vivas envolvidas neste programa, todas elas estão terminantemente proibidas de relatar a qualquer outro indivíduo sobre o que aconteceu (por motivos legais, inclusive). Fazemos isso para a preservação da imagem de nossa empresa e de todos os nossos funcionários que trabalhavam para que o projeto fosse possível.</p>
+				<p>Terminamos então com uma mensagem de condolescência e de agradecimento de nosso CEO, Jin-Soo Kwon: “Compadeço com as famílias das vítimas envolvidas nesse acidente. As famílias de todos os corpos que foram reconhecidos pela nossa equipe receberão auxílio financeiro com fins de retratação. Finalizo minha fala agradecendo a todos que nos apoiaram e trabalharam todos esses anos de funcionamento da companhia Samsara. Meus sinceros agradecimentos e abraços. Obrigado!” </p>
+			</section>
+        </section>
+
+        <section class="pop-up-2">
+            <div class="cabecalho">
+                <a onclick="fecha2()" id="fecha">&#9938;</a>
+            </div>
+			<section class="conteudo-noticia">
+				<h2 class="titulo-popup">Breve Anúncio</h2>
+                <p class="data" style="text-indent: 0; text-align: center;">22 de julho, 2011</p>
+				<img src="hipotese.jpg">
+				<p>A Companhia Samsara tem o prazer de anunciar, neste breve artigo, que há, aproximadamente 1 ano, estamos envolvidos em um novo projeto científico (sendo esses um dos maiores pelos quais já estivemos trabalhando).</p>
+				<p>Por motivos legais, ainda não é possível a divulgação da localização, nem o principal objetivo que tal atividade tem. Entretanto, pode-se afirmar que é algo que, caso tenha um resultado positivo, mudará o mundo médico, farmacêutico e psicológicos de maneiras jamais vistas antes. O que está sendo estudado tem alto potencial de se tornar uma das maiores descobertas que a humanidade já fez.</p>
+				<p>Fazemos esse anúncio com o principal objetivo de atualizar nossos clientes e de fazer uma oferta. Estamos oferecendo, para trabalhar dentro desse projeto, 50 vagas de empregos para médicos, biólogos, farmacêuticos, antropólogos, historiadores, psicólogos. Caso esteja interessado, entre em contato na seção “Contato” do nosso site. </p>
+				<p>Por ora é isso que se pode anunciar. Quando tivermos melhores resultados (mais próximos do esperado), voltaremos a atualizar. </p>
+			</section>
+        </section>
+    </main>
+
+    <footer>
+        <img src="logo_branco.png">
+        <p>&copy; Copyright - Samsara 2012</p>
+    </footer>
+
+    <script src="codes.js"></script>
+</body>
+</html>
